@@ -1,0 +1,5 @@
+com.thalmic.myo.Arm:Com.Thalmic.Myo:Arm
+com.thalmic.myo.Myo$ConnectionState:Com.Thalmic.Myo:Myo.ConnectionState
+com.thalmic.myo.Myo$VibrationType:Com.Thalmic.Myo:Myo.VibrationType
+com.thalmic.myo.Pose:Com.Thalmic.Myo:Pose
+com.thalmic.myo.XDirection:Com.Thalmic.Myo:XDirection

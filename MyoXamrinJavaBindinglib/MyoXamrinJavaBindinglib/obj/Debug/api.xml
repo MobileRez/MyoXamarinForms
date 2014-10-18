@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.thalmic.myo">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AbstractDeviceListener" static="false" visibility="public">
+<implements name="com.thalmic.myo.DeviceListener" name-generic-aware="com.thalmic.myo.DeviceListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractDeviceListener" static="false" type="com.thalmic.myo.AbstractDeviceListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAccelerometerData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onArmLost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onArmRecognized" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Arm">
+</parameter>
+<parameter name="p3" type="com.thalmic.myo.XDirection">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onGyroscopeData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onOrientationData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPair" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPose" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Pose">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.Arm&gt;" final="true" name="Arm" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.Arm" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.Arm[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="LEFT" static="true" transient="false" type="com.thalmic.myo.Arm" type-generic-aware="com.thalmic.myo.Arm" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RIGHT" static="true" transient="false" type="com.thalmic.myo.Arm" type-generic-aware="com.thalmic.myo.Arm" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="com.thalmic.myo.Arm" type-generic-aware="com.thalmic.myo.Arm" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Arm.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.thalmic.myo.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BLE_STACK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;jb&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLASSIFIER_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;camm&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_SDK_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;public&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PACKAGE_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.thalmic.myo&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="6000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.6.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ClassifierEvent" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="getArm" native="false" return="com.thalmic.myo.Arm" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPose" native="false" return="com.thalmic.myo.Pose" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="com.thalmic.myo.ClassifierEvent.Type" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXDirection" native="false" return="com.thalmic.myo.XDirection" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ClassifierEvent.ClassifierEventFormat&gt;" final="true" name="ClassifierEvent.ClassifierEventFormat" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="DATA_1" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" type-generic-aware="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_2" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" type-generic-aware="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_TYPE" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" type-generic-aware="com.thalmic.myo.ClassifierEvent.ClassifierEventFormat" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ClassifierEvent.Type&gt;" final="true" name="ClassifierEvent.Type" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.ClassifierEvent.Type" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.ClassifierEvent.Type[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ARM_LOST" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.Type" type-generic-aware="com.thalmic.myo.ClassifierEvent.Type" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARM_RECOGNIZED" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.Type" type-generic-aware="com.thalmic.myo.ClassifierEvent.Type" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE" static="true" transient="false" type="com.thalmic.myo.ClassifierEvent.Type" type-generic-aware="com.thalmic.myo.ClassifierEvent.Type" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ControlCommand" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ControlCommand.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ControlCommand.EmgMode&gt;" final="true" name="ControlCommand.EmgMode" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.ControlCommand.EmgMode" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.ControlCommand.EmgMode[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DISABLED" static="true" transient="false" type="com.thalmic.myo.ControlCommand.EmgMode" type-generic-aware="com.thalmic.myo.ControlCommand.EmgMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMG" static="true" transient="false" type="com.thalmic.myo.ControlCommand.EmgMode" type-generic-aware="com.thalmic.myo.ControlCommand.EmgMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FV" static="true" transient="false" type="com.thalmic.myo.ControlCommand.EmgMode" type-generic-aware="com.thalmic.myo.ControlCommand.EmgMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ControlCommand.SetMode&gt;" final="true" name="ControlCommand.SetMode" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="COMMAND_TYPE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetMode" type-generic-aware="com.thalmic.myo.ControlCommand.SetMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMG_MODE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetMode" type-generic-aware="com.thalmic.myo.ControlCommand.SetMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMU_MODE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetMode" type-generic-aware="com.thalmic.myo.ControlCommand.SetMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PAYLOAD_SIZE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetMode" type-generic-aware="com.thalmic.myo.ControlCommand.SetMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ControlCommand.SetModeCustom&gt;" final="true" name="ControlCommand.SetModeCustom" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="COMMAND_TYPE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMG_MODE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMG_SAMPLE_RATE1" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMG_SAMPLE_RATE2" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FV_WINDOW_SHIFT" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FV_WINDOW_SIZE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMU_LPF" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMU_MODE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMU_SAMPLE_RATE1" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMU_SAMPLE_RATE2" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PAYLOAD_SIZE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.SetModeCustom" type-generic-aware="com.thalmic.myo.ControlCommand.SetModeCustom" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ControlCommand.Vibration&gt;" final="true" name="ControlCommand.Vibration" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="COMMAND_TYPE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.Vibration" type-generic-aware="com.thalmic.myo.ControlCommand.Vibration" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PAYLOAD_SIZE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.Vibration" type-generic-aware="com.thalmic.myo.ControlCommand.Vibration" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATION_TYPE" static="true" transient="false" type="com.thalmic.myo.ControlCommand.Vibration" type-generic-aware="com.thalmic.myo.ControlCommand.Vibration" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DeviceListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAccelerometerData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onArmLost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onArmRecognized" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Arm">
+</parameter>
+<parameter name="p3" type="com.thalmic.myo.XDirection">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onGyroscopeData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onOrientationData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPair" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPose" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Pose">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FirmwareVersion" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="isNotSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toDisplayString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MINIMUM_FIRMWARE_VERSION_PATCH" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQUIRED_FIRMWARE_VERSION_MAJOR" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQUIRED_FIRMWARE_VERSION_MINOR" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="hardwareRev" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="major" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="minor" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="patch" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.thalmic.myo.internal.ble.BleGattCallback" extends-generic-aware="com.thalmic.myo.internal.ble.BleGattCallback" final="false" name="GattCallback" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="GattCallback" static="false" type="com.thalmic.myo.GattCallback" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Hub">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GattCallback.UpdateParser" static="true" visibility="">
+<implements name="com.thalmic.myo.GattCallback.ValueListener" name-generic-aware="com.thalmic.myo.GattCallback.ValueListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="onMyoConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onMyoDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onReadRemoteRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GattCallback.ValueListener" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="onCharacteristicChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="GattConstants" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="com.thalmic.myo.AbstractDeviceListener" extends-generic-aware="com.thalmic.myo.AbstractDeviceListener" final="false" name="Hub.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Hub.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Hub.3" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Hub.InstanceHolder" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Hub.ScanItemClickListener" static="false" visibility="">
+<implements name="com.thalmic.myo.scanner.Scanner.OnMyoClickedListener" name-generic-aware="com.thalmic.myo.scanner.Scanner.OnMyoClickedListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMyoClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MultiListener" static="false" visibility="">
+<implements name="com.thalmic.myo.DeviceListener" name-generic-aware="com.thalmic.myo.DeviceListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.DeviceListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="contains" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.DeviceListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAccelerometerData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onArmLost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onArmRecognized" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Arm">
+</parameter>
+<parameter name="p3" type="com.thalmic.myo.XDirection">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onGyroscopeData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onOrientationData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPair" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPose" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="com.thalmic.myo.Pose">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.DeviceListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Myo" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionState" native="false" return="com.thalmic.myo.Myo.ConnectionState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMacAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFirmwareVersionSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vibrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo.VibrationType">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.Myo.ConnectionState&gt;" final="true" name="Myo.ConnectionState" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.Myo.ConnectionState" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.Myo.ConnectionState[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CONNECTED" static="true" transient="false" type="com.thalmic.myo.Myo.ConnectionState" type-generic-aware="com.thalmic.myo.Myo.ConnectionState" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECTING" static="true" transient="false" type="com.thalmic.myo.Myo.ConnectionState" type-generic-aware="com.thalmic.myo.Myo.ConnectionState" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DISCONNECTED" static="true" transient="false" type="com.thalmic.myo.Myo.ConnectionState" type-generic-aware="com.thalmic.myo.Myo.ConnectionState" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.Myo.VibrationType&gt;" final="true" name="Myo.VibrationType" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.Myo.VibrationType" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.Myo.VibrationType[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="LONG" static="true" transient="false" type="com.thalmic.myo.Myo.VibrationType" type-generic-aware="com.thalmic.myo.Myo.VibrationType" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIUM" static="true" transient="false" type="com.thalmic.myo.Myo.VibrationType" type-generic-aware="com.thalmic.myo.Myo.VibrationType" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHORT" static="true" transient="false" type="com.thalmic.myo.Myo.VibrationType" type-generic-aware="com.thalmic.myo.Myo.VibrationType" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MyoGatt" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="MyoGatt" static="false" type="com.thalmic.myo.MyoGatt" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Hub">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="configureCustomDataAcquisition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.thalmic.myo.ControlCommand.EmgMode">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="configureDataAcquisition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.thalmic.myo.ControlCommand.EmgMode">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBleManager" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.BleManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vibrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.thalmic.myo.Myo.VibrationType">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MyoUpdateParser" static="false" visibility="">
+<implements name="com.thalmic.myo.GattCallback.UpdateParser" name-generic-aware="com.thalmic.myo.GattCallback.UpdateParser">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCharacteristicChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMyoConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMyoDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadRemoteRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MyoUpdateParser.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.Pose&gt;" final="true" name="Pose" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.Pose" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.Pose[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="FINGERS_SPREAD" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FIST" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REST" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THUMB_TO_PINKY" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WAVE_IN" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WAVE_OUT" static="true" transient="false" type="com.thalmic.myo.Pose" type-generic-aware="com.thalmic.myo.Pose" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Pose.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Quaternion" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Quaternion" static="false" type="com.thalmic.myo.Quaternion" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Quaternion" static="false" type="com.thalmic.myo.Quaternion" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+<parameter name="p2" type="double">
+</parameter>
+<parameter name="p3" type="double">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Quaternion" static="false" type="com.thalmic.myo.Quaternion" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="inverse" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="normalized" native="false" return="com.thalmic.myo.Quaternion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pitch" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="roll" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="x" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="y" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="yaw" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Quaternion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="z" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ScanListener" static="false" visibility="">
+<implements name="com.thalmic.myo.scanner.Scanner.OnMyoScannedListener" name-generic-aware="com.thalmic.myo.scanner.Scanner.OnMyoScannedListener">
+</implements>
+<implements name="com.thalmic.myo.scanner.Scanner.OnScanningStartedListener" name-generic-aware="com.thalmic.myo.scanner.Scanner.OnScanningStartedListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ScanListener" static="false" type="com.thalmic.myo.ScanListener" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Hub">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMyoScanned" native="false" return="com.thalmic.myo.Myo" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScanningStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScanningStopped" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pairByMacAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pairWithAdjacent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pairWithAny" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ScanListener.1" static="true" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ScanListener.ForcePairMyoChecker" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ScanListener.ForcePairMyoCheckerImpl" static="true" visibility="">
+<implements name="com.thalmic.myo.ScanListener.ForcePairMyoChecker" name-generic-aware="com.thalmic.myo.ScanListener.ForcePairMyoChecker">
+</implements>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.ScanListener.PairMode&gt;" final="true" name="ScanListener.PairMode" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="ADDRESS" static="true" transient="false" type="com.thalmic.myo.ScanListener.PairMode" type-generic-aware="com.thalmic.myo.ScanListener.PairMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ADJACENT" static="true" transient="false" type="com.thalmic.myo.ScanListener.PairMode" type-generic-aware="com.thalmic.myo.ScanListener.PairMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANY" static="true" transient="false" type="com.thalmic.myo.ScanListener.PairMode" type-generic-aware="com.thalmic.myo.ScanListener.PairMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="com.thalmic.myo.ScanListener.PairMode" type-generic-aware="com.thalmic.myo.ScanListener.PairMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Vector3" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Vector3" static="false" type="com.thalmic.myo.Vector3" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+<parameter name="p2" type="double">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Vector3" static="false" type="com.thalmic.myo.Vector3" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Vector3">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Vector3" static="false" type="com.thalmic.myo.Vector3" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dot" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="normalize" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subtract" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Vector3">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="x" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="y" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="z" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.thalmic.myo.XDirection&gt;" final="true" name="XDirection" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.thalmic.myo.XDirection" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.thalmic.myo.XDirection[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="TOWARD_ELBOW" static="true" transient="false" type="com.thalmic.myo.XDirection" type-generic-aware="com.thalmic.myo.XDirection" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOWARD_WRIST" static="true" transient="false" type="com.thalmic.myo.XDirection" type-generic-aware="com.thalmic.myo.XDirection" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="com.thalmic.myo.XDirection" type-generic-aware="com.thalmic.myo.XDirection" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="XDirection.1" static="true" visibility=""/>
+</package>
+<package name="com.thalmic.myo.internal.ble">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Address" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Address" static="false" type="com.thalmic.myo.internal.ble.Address" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BleGatt" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="discoverServices" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readCharacteristic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="java.util.UUID">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readRemoteRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBleGattCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.BleGattCallback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacteristicNotification" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="java.util.UUID">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeCharacteristic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="java.util.UUID">
+</parameter>
+<parameter name="p3" type="byte[]">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BleGattCallback" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BleGattCallback" static="false" type="com.thalmic.myo.internal.ble.BleGattCallback" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCharacteristicChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCharacteristicRead" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCharacteristicWrite" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="java.util.UUID">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDeviceConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDeviceConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDeviceDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadRemoteRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServicesDiscovered" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BleManager" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="dispose" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBleGatt" native="false" return="com.thalmic.myo.internal.ble.BleGatt" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isBluetoothSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startBleScan" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.BleManager.BleScanCallback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="stopBleScan" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.BleManager.BleScanCallback">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BleManager.BleScanCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onBleScan" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="java.util.UUID">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.3" static="false" visibility="">
+<implements name="java.util.concurrent.Callable" name-generic-aware="java.util.concurrent.Callable&lt;java.lang.Boolean&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="call" native="false" return="java.lang.Boolean" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.4" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.5" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.6" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.7" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.8" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="JBBluetoothLeController.9" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="com.thalmic.myo.internal.classifier">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CammClassifier" static="false" visibility="">
+<implements name="com.thalmic.myo.internal.classifier.Classifier.PoseClassifier" name-generic-aware="com.thalmic.myo.internal.classifier.Classifier.PoseClassifier">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CammClassifier" static="false" type="com.thalmic.myo.internal.classifier.CammClassifier" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="classify" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getArm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXDirection" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTrained" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pushImuData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHardwareRev" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="train" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.classifier.Classifier.TrainingData">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Classifier" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Classifier" static="false" type="com.thalmic.myo.internal.classifier.Classifier" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="classify" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getArm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXDirection" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTrained" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pushImuData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHardwareRev" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="train" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.classifier.Classifier.TrainingData">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="HARDWARE_REV_REVC" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDWARE_REV_REVD" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDWARE_REV_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_ARM_LEFT" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_ARM_RIGHT" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_ARM_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_STATE_CLASSIFYING" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_STATE_READY" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_STATE_UNSTABLE" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_X_DIRECTION_TOWARD_ELBOW" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_X_DIRECTION_TOWARD_WRIST" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYO_X_DIRECTION_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="65535" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUM_HARDWARE_REVS" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUM_POSES" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_FINGERS_SPREAD" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_FIST" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_REST" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_THUMB_TO_PINKY" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="65535" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_WAVE_IN" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSE_WAVE_OUT" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Classifier.PoseClassifier" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="classify" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="short">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getArm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXDirection" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isTrained" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="pushImuData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setHardwareRev" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="train" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.classifier.Classifier.TrainingData">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Classifier.TrainingData" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Classifier.TrainingData" static="false" type="com.thalmic.myo.internal.classifier.Classifier.TrainingData" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="MAJOR_VERSION" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINOR_VERSION" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUM_CHANNELS" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUM_POSES" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUM_SAMPLES" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="samples" static="false" transient="false" type="int[][][]" type-generic-aware="int[][][]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VectorClassifier" static="false" visibility="">
+<implements name="com.thalmic.myo.internal.classifier.Classifier.PoseClassifier" name-generic-aware="com.thalmic.myo.internal.classifier.Classifier.PoseClassifier">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="VectorClassifier" static="false" type="com.thalmic.myo.internal.classifier.VectorClassifier" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="classify" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+<parameter name="p1" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getArm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXDirection" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTrained" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pushImuData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHardwareRev" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="train" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.classifier.Classifier.TrainingData">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="VectorClassifierStatePtrs" static="false" visibility=""/>
+</package>
+<package name="com.thalmic.myo.internal.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ByteUtil" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ByteUtil" static="false" type="com.thalmic.myo.internal.util.ByteUtil" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="bytesToHex" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUuidFromBytes" native="false" return="java.util.UUID" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FileUtil" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="readFileLineAsString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readStringFromFile" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeStringToFile" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="NetworkUtil" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetworkUtil" static="false" type="com.thalmic.myo.internal.util.NetworkUtil" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="postJsonToUrl" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+</package>
+<package name="com.thalmic.myo.scanner">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MyoDeviceListAdapter.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MyoDeviceListAdapter.RssiComparator" static="true" visibility="">
+<implements name="java.util.Comparator" name-generic-aware="java.util.Comparator&lt;com.thalmic.myo.scanner.MyoDeviceListAdapter.Item&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Scanner.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Scanner.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Scanner.OnMyoClickedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMyoClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Scanner.OnMyoScannedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMyoScanned" native="false" return="com.thalmic.myo.Myo" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Scanner.OnScanningStartedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onScanningStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onScanningStopped" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Scanner.ScanCallback" static="false" visibility="">
+<implements name="com.thalmic.myo.internal.ble.BleManager.BleScanCallback" name-generic-aware="com.thalmic.myo.internal.ble.BleManager.BleScanCallback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBleScan" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.internal.ble.Address">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="java.util.UUID">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Scanner.ScanCallback.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Scanner.ScanListAdapter" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addDevice" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.thalmic.myo.Myo">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="notifyDeviceChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package>
+</api>

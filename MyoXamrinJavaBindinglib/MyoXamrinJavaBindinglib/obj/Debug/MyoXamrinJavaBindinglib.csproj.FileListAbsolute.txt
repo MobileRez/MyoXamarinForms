@@ -1,0 +1,4 @@
+D:\GitHub\MyoXamarinForms\MyoXamrinJavaBindinglib\MyoXamrinJavaBindinglib\bin\Debug\MyoXamrinJavaBindinglib.dll
+D:\GitHub\MyoXamarinForms\MyoXamrinJavaBindinglib\MyoXamrinJavaBindinglib\bin\Debug\MyoXamrinJavaBindinglib.pdb
+D:\GitHub\MyoXamarinForms\MyoXamrinJavaBindinglib\MyoXamrinJavaBindinglib\obj\Debug\MyoXamrinJavaBindinglib.dll
+D:\GitHub\MyoXamarinForms\MyoXamrinJavaBindinglib\MyoXamrinJavaBindinglib\obj\Debug\MyoXamrinJavaBindinglib.pdb
