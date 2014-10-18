@@ -86,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libgesture-classifier.so" />
+    <AndroidNativeLibrary Include="libs\armeabi\libgesture-classifier.so" />
+    <AndroidNativeLibrary Include="libs\x86\libgesture-classifier.so" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
